@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const div = document.createElement("div");
+      const a = document.createElement('a')
+      const a2 = document.createElement('a')
+      const a3 = document.createElement('a')
+      div.textContent =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis deserunt rem laborum consectetur repudiandae quisquam aliquid ipsa repellendus inventore consequatur placeat, a ratione, incidunt modi, fugiat quae odio ea?";
+      div.style.color = "black";
+      div.style.marginLeft = "35%";
+      div.style.marginRight = "35%";
+      div.style.border = "2px solid #a31616";
+      div.style.borderRadius = "10px";
+      div.style.padding = "10px";
+
+      const div2 = document.createElement("div");
+      const li_1 = document.createElement("li");
+      const li_2 = document.createElement("li");
+      const li_3 = document.createElement("li");
+
+      div2.style.display = "flex";
+      div2.style.justifyContent = "space-evenly";
+      div2.style.marginLeft = "28%";
+      div2.style.marginRight = "28%";
+
+      div2.style.marginTop = "20px";
+      div2.style.fontSize = "20px";
+
+    li_1.append(a)
+    li_2.append(a2)
+    li_3.append(a3)
+
+
+      li_1.style.listStyleType = "none";
+      li_2.style.listStyleType = "none";
+      li_3.style.listStyleType = "none";
+
+      a.href = 'https://github.com/intocode/intro-dom'
+      a.textContent = "intocode"
+      
+      a2.href = 'https://www.google.ru'
+      a2.textContent = 'google'
+
+      a3.href = 'https://github.com/intocode/intro-dom'
+      a3.textContent = 'instagram'
+  
+
+      div2.append(li_1, li_2, li_3);
+
+      document.body.append(div2);
+      document.body.prepend(div);
+    </script>
+  </body>
+</html>
